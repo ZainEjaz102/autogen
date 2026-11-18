@@ -10,8 +10,10 @@ requires-python = ">=3.14"
 dependencies = [
     "autogen-agentchat>=0.7.5",
     "autogen-ext[openai]>=0.7.5",
+    "fastapi>=0.163.2",
     "httpx>=0.28.1",
     "streamlit>=1.66.0",
+    "uvicorn>=0.54.0",
 ]
 
 [project.scripts]
