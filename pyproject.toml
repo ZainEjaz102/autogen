@@ -1,0 +1,22 @@
+[project]
+name = "autogen"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ZainEjaz102", email = "chandarzain@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "autogen-agentchat>=0.7.5",
+    "autogen-ext[openai]>=0.7.5",
+    "httpx>=0.28.1",
+    "streamlit>=1.66.0",
+]
+
+[project.scripts]
+autogen = "autogen:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
